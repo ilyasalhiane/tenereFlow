@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-sand text-ink antialiased;
+}
+
+.zellige-bg {
+  background-color: #f7f2e9;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.14'%3E%3Cpath d='M60 8L80 20V44L60 56L40 44V20L60 8Z' stroke='%231F4FA3'/%3E%3Cpath d='M20 44L40 56V80L20 92L0 80V56L20 44Z' stroke='%231F7A63'/%3E%3Cpath d='M100 44L120 56V80L100 92L80 80V56L100 44Z' stroke='%23C96F4A'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.arch-divider {
+  mask: radial-gradient(80px at 50% 100%, transparent 96%, black 100%) no-repeat;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
